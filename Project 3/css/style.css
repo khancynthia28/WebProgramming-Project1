@@ -1,0 +1,47 @@
+body{
+	font-family: sans-serif;
+}
+#puzzle{
+	position: relative;
+	width: 400px;
+	height: 400px;
+	font-size: 32pt;
+	margin: 0 auto;
+}
+#puzzle div{
+	width: 80px;
+	height: 80px;
+	border-radius: 4px;
+}
+#puzzle div.empty{
+	background: transparent;
+}
+#puzzle.animate div{
+ 	transition: 0.15s left, 0.15s top;
+}
+.puzzlepiece{
+	border: 2px solid black;
+	height: 100px;
+	width: 100px;
+	line-height: 100px;
+	position: absolute;
+	text-align: center;
+}
+
+.timer{
+	text-align: center;
+	margin: 5px;
+}
+
+h1, p, .counter, #buttons{
+	text-align: center;
+	margin: 0 auto;
+}
+
+#audioPlayer{
+	visibility: hidden;
+}
+#w3c p{
+	position: relative;
+	right: 0px;
+}

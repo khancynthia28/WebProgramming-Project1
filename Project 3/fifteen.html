@@ -1,0 +1,74 @@
+<!-- Shuffle the puzzle to begin the timer -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Tangled Web - Fifteen Puzzle</title>
+	<link type="text/css" rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<h1>Fifteen Puzzle</h1>
+
+	<p>The goal of the fifteen puzzle is to un-jumble its fifteen squares by repeatedly making moves that slide squares<br> into the empty space. How quickly can you solve it?</p>
+
+	<audio controls autoplay loop id="audioPlayer">
+		<source src="./Audio/Animaniacs_Theme.mp3" type="audio/mp3">
+	</audio>
+	<div id="container">
+		<!-- Timer and move counter -->
+		<div class="infoPanel">
+			<div class="timer"></div>
+			<div class="counter"></div>
+		</div>
+		<!-- Puzzle -->
+		<div id="puzzle">
+			<div id="square_1_1">1</div>
+			<div id="square_1_2">2</div>
+			<div id="square_1_3">3</div>
+			<div id="square_1_4">4</div>
+
+			<div id="square_2_1">5</div>
+			<div id="square_2_2">6</div>
+			<div id="square_2_3">7</div>
+			<div id="square_2_4">8</div>
+
+			<div id="square_3_1">9</div>
+			<div id="square_3_2">10</div>
+			<div id="square_3_3">11</div>
+			<div id="square_3_4">12</div>
+
+			<div id="square_4_1">13</div>
+			<div id="square_4_2">14</div>
+			<div id="square_4_3">15</div>
+			<div id="square_4_4"></div>
+		</div>
+	</div>
+
+	<!-- Shuffle and background changer -->
+	<div id="buttons">
+		<button id="shuffle">Shuffle</button>
+
+		<select id="animaniacs" onchange="changeBackground()">
+			<option value="wakko" id="wakko">Wakko</option>
+			<option value="yakko" id="yakko">Yakko</option>
+			<option value="dot" id="dot">Dot</option>
+			<option value="warnerBros" id="warnerBros">Warner Bros.</option>
+		</select>
+	</div><br>
+
+	<p>American puzzle author and mathematician Sam Loyd is often falsely credited with creating the puzzle; indeed,<br> Loyd claimed from 1891 until his death in 1911 that he invented it. The puzzle was actually created around 1874<br> by Noyes Palmer chapman, a postmaster in Canastota, New York.</p>
+
+	<div id="w3c">
+		<p>
+    		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+        		<img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+    		</a>
+		</p>
+	</div>
+     
+
+<script src="./fifteen.js"></script>
+</body>
+
+</html>
